@@ -1,7 +1,3 @@
-![Anchor logo](https://raw.githubusercontent.com/YeoLab/anchor/master/logo/v1/logo.png)
-
-[![](https://img.shields.io/travis/YeoLab/anchor.svg)](https://travis-ci.org/YeoLab/anchor)[![](https://img.shields.io/pypi/v/anchor.svg)](https://pypi.python.org/pypi/anchor)[![codecov](https://codecov.io/gh/YeoLab/anchor/branch/master/graph/badge.svg)](https://codecov.io/gh/YeoLab/anchor)
-
 ## What is `anchor`?
 
 Anchor is a python package to find unimodal, bimodal, and multimodal features in any data that is normalized between 0 and 1, for example alternative splicing or other percent-based units.
@@ -11,35 +7,11 @@ Anchor is a python package to find unimodal, bimodal, and multimodal features in
 
 ## Installation
 
-To install `anchor`, we recommend using the
-[Anaconda Python Distribution](http://anaconda.org/) and creating an
-environment, so the `anchor` code and dependencies don't interfere with
-anything else. Here is the command to create an environment:
-
-
 ```
-conda create -n anchor-env pandas scipy numpy matplotlib seaborn
-```
-
-### Stable (recommended)
-
-
-To install this code from the Python Package Index, you'll need to specify ``anchor-bio`` (``anchor`` was already taken - boo).
-
-```
-pip install anchor-bio
-```
-
-### Bleeding-edge (for the brave)
-
-If you want the latest and greatest version, clone this github repository and use `pip` to install
-
-```
-git clone git@github.com:YeoLab/anchor
+git clone https://github.com/yihanwu/anchor.git
 cd anchor
-pip install .  # The "." means "install *this*, the folder where I am now"
+pip install -r requirements.txt
 ```
-
 
 ## Usage
 
@@ -70,6 +42,13 @@ bayes_factors = bm.fit(data)
 
 
 ## History
+
+### Modifications to be made on this fork
+
+[ ] integrate new (version > 0.7) seaborn palette changes from [pull request](https://github.com/YeoLab/anchor/pull/2)
+[ ] change readme based on pull request [here](https://github.com/YeoLab/anchor/pull/1)
+[ ] copy package requirements into requirements.txt
+[ ] change cross_validation.Bootstrap to KFold (n_splits=2, shuffle=True) 
 
 ### 1.1.1 (2017-06-29)
 
