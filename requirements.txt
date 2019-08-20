@@ -1,7 +1,7 @@
-pytest
-flake8
-pandas
-matplotlib
-seaborn
+pytest>=2.9.1
+flake8>=2.5.1
+pandas>=0.18.0
+matplotlib>=1.5.1
+seaborn>=0.9
 pytest-cov
-scikit-learn
+scikit-learn>=0.15.1
