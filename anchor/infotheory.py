@@ -4,7 +4,7 @@ Information-theoretic calculations
 
 import numpy as np
 import pandas as pd
-from sklearn import cross_validation
+from sklearn.model_selection import KFold
 
 EPSILON = 100 * np.finfo(float).eps
 
@@ -250,9 +250,8 @@ def cross_phenotype_jsd(data, groupby, bins, n_iter=100):
 
             if phenotype1 == phenotype2:
                 seriess = []
-                bs = cross_validation.Bootstrap(df1.shape[0], n_iter=n_iter,
-                                                train_size=0.5)
-                for i, (ind1, ind2) in enumerate(bs):
+                bs = KFold(n_splits=2, train_size = 0.5)
+                for ind1, ind2 in bs.split(df1):
                     df1_subset = df1.iloc[ind1, :]
                     df2_subset = df2.iloc[ind2, :]
                     seriess.append(
