@@ -5,7 +5,7 @@ import numpy as np
 import numpy.testing as npt
 import pytest
 from scipy import stats
-from scipy.misc import logsumexp
+from scipy.special import logsumexp
 
 
 class TestModalityModel(object):

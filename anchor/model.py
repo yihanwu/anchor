@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from scipy import stats
-from scipy.misc import logsumexp
+from scipy.special import logsumexp
 import seaborn as sns
 
 from .visualize import violinplot

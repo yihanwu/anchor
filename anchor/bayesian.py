@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from scipy.misc import logsumexp
+from scipy.special import logsumexp
 
 from .names import NEAR_ZERO, NEAR_HALF, NEAR_ONE, BIMODAL, NULL_MODEL
 from .model import ModalityModel
