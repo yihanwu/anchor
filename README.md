@@ -47,8 +47,9 @@ bayes_factors = bm.fit(data)
 
 - change readme based on pull request [here](https://github.com/YeoLab/anchor/pull/1)
 - integrate new (version > 0.7) seaborn palette changes from [pull request](https://github.com/YeoLab/anchor/pull/2)
-[ ] copy package requirements into requirements.txt (see [this commit](https://github.com/YeoLab/anchor/blob/8d0505bba9a8695070fa3bc4c8c033f55b08cb16/environment.yml) for original package requirements)
-[ ] change cross_validation.Bootstrap to KFold (n_splits=2, shuffle=True) 
+- change minor import differences
+- copy package requirements into requirements.txt (see [this commit](https://github.com/YeoLab/anchor/blob/8d0505bba9a8695070fa3bc4c8c033f55b08cb16/environment.yml) for original package requirements)
+- change cross_validation.Bootstrap to KFold (n_splits=2, train_size = 0.5)
 
 ### 1.1.1 (2017-06-29)
 
